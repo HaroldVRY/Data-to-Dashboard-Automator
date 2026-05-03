@@ -1,29 +1,29 @@
 # 📊 Data-to-Dashboard Automator (IBM Hackathon 2026)
 
-**Desarrollado por:** Harold Victor Reyna Yangali (Estudiante de Ingeniería de Sistemas - UNI)
-**Tecnologías:** IBM watsonx.ai, IBM Bob, FastAPI, Streamlit, SQLite.
+**Developer:** Harold Victor Reyna Yangali (Systems Engineering Student - Universidad Nacional de Ingeniería, Peru)
+**Tech Stack:** IBM watsonx.ai, IBM Bob, FastAPI, Streamlit, SQLite.
 
-## 🚀 Visión General
-Data-to-Dashboard Automator es una solución de **IA Generativa** diseñada para democratizar el acceso a los datos. Permite a usuarios sin conocimientos técnicos transformar lenguaje natural en consultas SQL precisas y dashboards visuales interactivos en tiempo real.
+## 🚀 Overview
+Data-to-Dashboard Automator is a **Generative AI** solution designed to democratize data access. It allows non-technical users to transform natural language into precise SQL queries and real-time interactive visual dashboards.
 
-## 🧠 Innovación y Características Clave
-*   **Auto-healing SQL Engine:** Implementa un loop de reintentos agénticos que detecta errores de ejecución y proporciona feedback automático a **watsonx.ai** para corregir la consulta.
-*   **Lienzo de Datos Interactivo:** Integra un diagrama de Entidad-Relación dinámico (Mermaid.js) para que el usuario visualice la estructura de la base de datos antes de preguntar.
-*   **Prompt Injection Architecture:** Utiliza técnicas de *Few-Shot Prompting* y *Context Injection* para garantizar que el modelo Granite-8b se mantenga estrictamente dentro del esquema de datos real.
-*   **Visualización Inteligente:** Selección automatizada de gráficos basada en el tipo de datos devuelto (Categórico vs. Numérico).
+## 🧠 Innovation & Key Features
+*   **Self-healing SQL Engine:** Implements an agentic retry loop that detects execution errors and provides automatic feedback to **watsonx.ai** to correct the query in real-time.
+*   **Interactive Data Canvas:** Integrates a dynamic Entity-Relationship diagram (Mermaid.js) so users can visualize the database structure before asking questions.
+*   **Prompt Injection Architecture:** Utilizes *Few-Shot Prompting* and *Context Injection* techniques to ensure the Granite-8b model strictly adheres to the actual database schema.
+*   **Intelligent Visualization:** Automated chart selection based on the returned data type (Categorical vs. Numerical).
 
-## 🛠️ Arquitectura Técnica
-*   **Backend:** FastAPI (Python) gestionando la lógica de negocio y la conexión con la base de datos SQLite.
-*   **IA:** Integración con **IBM watsonx.ai** utilizando el modelo `granite-8b-code-instruct`.
-*   **Frontend:** Streamlit con componentes personalizados e Iframes aislados para visualización de esquemas en entornos seguros de 2026.
+## 🛠️ Technical Architecture
+*   **Backend:** FastAPI (Python) managing business logic and the SQLite database connection.
+*   **AI:** Integration with **IBM watsonx.ai** using the `granite-8b-code-instruct` model.
+*   **Frontend:** Streamlit with custom components and isolated Iframes for schema visualization in secure 2026 environments.
 
-## 📦 Instalación y Uso
-1. Clonar el repositorio.
-2. Crear un entorno virtual: `python -m venv venv`.
-3. Instalar dependencias: `pip install -r requirements.txt`.
-4. Configurar variables de entorno en `.env`: `IBM_API_KEY=tu_llave_aqui`.
-5. Iniciar Backend: `python backend/main.py`.
-6. Iniciar Frontend: `streamlit run frontend/app.py`.
+## 📦 Installation & Usage
+1. Clone the repository.
+2. Create a virtual environment: `python -m venv venv`.
+3. Install dependencies: `pip install -r requirements.txt`.
+4. Set environment variables in `.env`: `IBM_API_KEY=your_key_here`.
+5. Start Backend: `python backend/main.py`.
+6. Start Frontend: `streamlit run frontend/app.py`.
 
 ---
-*Proyecto creado para el Desafío de IBM Bob y watsonx.ai - Mayo 2026*
+*Project created for the IBM Bob & watsonx.ai Challenge - May 2026*
